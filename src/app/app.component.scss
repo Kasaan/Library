@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: gainsboro;
+    font-family: 'Lobster', cursive;
+
+
+    .header-logo {
+        flex: 0 0 20%;
+
+        a {
+            font-size: 2rem;
+            text-shadow: 4px 4px 4px #aaa;
+        }
+    }
+
+    .header-menu {
+        flex-basis: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

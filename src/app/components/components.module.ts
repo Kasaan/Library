@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { ShelfComponent } from './shelf/shelf.component';
+import { WishComponent } from './wish/wish.component';
 
 @NgModule({
     declarations: [
-        HeaderComponent
+        ShelfComponent,
+        WishComponent
     ],
     imports: [
         CommonModule
     ],
     exports: [
-        HeaderComponent,
     ]
 })
 export class ComponentsModule {}
