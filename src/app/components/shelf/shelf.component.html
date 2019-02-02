@@ -1,3 +1,19 @@
-<p>
-  shelf works!
-</p>
+<h2>My Bookshelf</h2>
+<ul class="shelf">
+    <li *ngFor="let book of books">
+        <span class="badge">{{ book.id }}</span
+        >{{ book.title }}:{{ book.author }}
+    </li>
+</ul>
+
+<div class="add">
+    <form #bookForm="ngForm">
+        <label>Title
+            <input [(ngModel)]="book.title" name="title" required />
+        </label>
+        <label>Author
+            <input [(ngModel)]="book.author" name="author" required />
+        </label>
+        <button (click)="addBook(); bookForm.reset()">Add</button>
+    </form>
+</div>

@@ -1,2 +1,18 @@
+.shelf {
+    list-style-type: none;
+    display:  flex;
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzaGVsZi5jb21wb25lbnQuc2NzcyJ9 */
+    li {
+        cursor: pointer;
+        margin: .5rem;
+        padding: .3rem 0;
+        border-radius: 4px;
+    }
+
+    .badge {
+        font-size: smaller;
+        padding: .5rem;
+        background-color: #607D8B;
+        color: white;
+    }
+}
